@@ -22,13 +22,13 @@ spec:
     spec:
       containers:
         - env:
-            - name: POSTGRES_DB
-              value: postgres
-            - name: POSTGRES_PASSWORD
-              value: postgres
-            - name: POSTGRES_USER
-              value: admin
-          image: postgres:13
+          - name: POSTGRES_DB
+            value: postgres
+          - name: POSTGRES_PASSWORD
+            value: postgres
+          - name: POSTGRES_USER
+            value: admin
+          image: postgres:13-alpine
           name: db
           ports:
             - containerPort: 5432
