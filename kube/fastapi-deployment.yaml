@@ -29,6 +29,7 @@ spec:
           name: fastapi
           ports:
             - containerPort: 8000
+            - name: fastapi
           resources: {}
       restartPolicy: Always
 status: {}
